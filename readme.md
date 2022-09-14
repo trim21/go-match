@@ -2,11 +2,15 @@
 
 A string/url matcher
 
+```shell
+go get github.com/trim21/go-match
+```
+
 ## Example
 
 ```javascript
-match.Match("http://www.example.com/foo/*", "http://www.example.com/foo/v")
-match.Match("http://www.example.org/*.html", "http://www.example.com/index.html")
+match.Match("https://www.example.com/foo/*", "https://www.example.com/foo/v")
+match.Match("https?://www.example.org/*.html", "http://www.example.com/index.html")
 ```
 
 ## License
